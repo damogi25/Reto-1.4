@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1{font-family: 'Rampart One', cursive; color: white; font-size: xx-large; text-align: left;}
+h2{font-family: 'Rampart One', cursive; color: black; text-align: center;}
+p{font-family: 'Klee One', cursive;}
+img{width: 100%; border-radius: 8px;box-sizing: border-box; padding: 5px;}
+body{ background-color: #F5F3BC;
+color: black;}
+iframe{width: 100%;border-radius: 8px;box-sizing: border-box; padding: 5px; }
+audio{width: 100%;box-sizing: border-box; padding: 5px;}
+th{background-color: gray;}
+
+.lista-menu li a {
+    text-decoration: none;
+    color: #AD3945;
+    background-color: white;
+    text-align: center;
+    width: 160px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+.menu ul,li{list-style: none;}
+.lista-menu li a:hover{
+    
+    background: #A3E0FF;
+    color: black;
+}
+
+@media screen and (max-width: 410px) {
+    .lista-menu li a {
+        float: none;
+    }  
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+table{background-color: white; border: 1px solid #6592A8;}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        justify-content: left; 
+    }
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
+    .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+}
+
+
+.Contenedora {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, auto);
+
+	grid-template-areas: "header header header header"
+						 "Descripción Retrato Retrato vídeo"
+						 "Tabla Tabla Canción Canción"
+                         "Familia Familia Familia Familia"
+						 "Footer Footer Footer Footer";
+}
+
+.Contenedora > div,
+.Contenedora .Descripción,
+.Contenedora .Retrato,
+.Contenedora .vídeo,
+.Contenedora .Tabla, 
+.Contenedora .Familia,
+.Contenedora .Footer,
+.Contenedora .header{
+	padding: 20px;
+	border-radius: 4px;
+    background-color: #F56C79;
+}
+                
+.Contenedora .header {
+	background-color:#AD3945;
+	grid-area: header;
+}
+
+.Contenedora .Descripción {
+	grid-area: Descripción;
+    background-color: #F56C79;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+}
+
+.Contenedora .Retrato {
+	grid-area: Retrato;
+    background-color: #A3E0FF;
+    align-items: center;
+	justify-content: center;
+	min-height: 100px;
+}
+
+.Contenedora .vídeo {
+    grid-area: vídeo;   
+}
+.Contenedora .Canción {
+    grid-area: Canción;   
+}
+
+.Contenedora .Tabla {
+    grid-area: Tabla;   
+}
+
+.Contenedora .Familia {
+    grid-area: Familia;
+    background-color: #A3E0FF;   
+}
+
+.Contenedora .Footer {
+    grid-area: Footer;   
+}
+
+@media screen and (max-width: 900px){
+	.Contenedora {
+		grid-template-areas: "header header header header"
+						 "Descripción Descripción Descripción Descripción"
+						 "Retrato Retrato Retrato Retrato "
+						 "vídeo vídeo vídeo vídeo"
+						 "Canción Canción Canción Canción"
+                         "Tabla Tabla Tabla Tabla"
+						 "Familia Familia Familia Familia"
+						 "Footer Footer Footer Footer"
+						 ;
+	}
+}
+
+
+
+
+
+
+                        
+
+    
+   
+
+    
+
+
+
+    
+    
+ 
+
